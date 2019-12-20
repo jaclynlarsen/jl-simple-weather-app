@@ -73,18 +73,34 @@ function displayData(forecast){
 	// For example, if I have an element <div class="today"> in my main content area
 	// I can add data from the "Daily" array like this
 
-	$('.day01 p').html(Math.round(forecast.daily.data[0].temperatureHigh));
-	$('.day01').append('<img src="'+displayIcon(forecast.daily.data[0].icon+">');
+	$('.day01 h2').html(Math.round(forecast.daily.data[0].temperatureHigh));
+	$('.day01 h3').html(Math.round(forecast.daily.data[0].temperatureLow));
+	$('.day01 h4').html(Math.round(forecast.daily.data[0].uvIndex));
 
-	$('.day02 p').html(Math.round(forecast.daily.data[1].temperatureHigh));
-	$('.day02 h3').html(displayDay(1));
-
-	$('.day03 p').html(Math.round(forecast.daily.data[2].temperatureHigh));
-	$('.day03 h3').html(displayDay(2));
-
-	$('.day04 p').html(Math.round(forecast.daily.data[3].temperatureHigh));
-	$('.day04 h3').html(displayDay(3));
+	$('.day02 h2').html(Math.round(forecast.daily.data[1].temperatureHigh));
+	$('.day02 h3').html(Math.round(forecast.daily.data[1].temperatureLow));
+	$('.day02 h4').html(Math.round(forecast.daily.data[1].uvIndex));
 	
+	$('.day03 h2').html(Math.round(forecast.daily.data[2].temperatureHigh));
+	$('.day03 h3').html(Math.round(forecast.daily.data[2].temperatureLow));
+	$('.day03 h4').html(Math.round(forecast.daily.data[2].uvIndex));
+
+	$('.day04 h2').html(Math.round(forecast.daily.data[3].temperatureHigh));
+	$('.day04 h3').html(Math.round(forecast.daily.data[3].temperatureLow));
+	$('.day04 h4').html(Math.round(forecast.daily.data[3].uvIndex));
+
+	$('.day05 h2').html(Math.round(forecast.daily.data[4].temperatureHigh));
+	$('.day05 h3').html(Math.round(forecast.daily.data[4].temperatureLow));
+	$('.day05 h4').html(Math.round(forecast.daily.data[4].uvIndex));
+
+	$('.day06 h2').html(Math.round(forecast.daily.data[5].temperatureHigh));
+	$('.day06 h3').html(Math.round(forecast.daily.data[5].temperatureLow));
+	$('.day06 h4').html(Math.round(forecast.daily.data[5].uvIndex));
+
+	$('.day07 h2').html(Math.round(forecast.daily.data[6].temperatureHigh));
+	$('.day07 h3').html(Math.round(forecast.daily.data[6].temperatureLow));
+	$('.day07 h4').html(Math.round(forecast.daily.data[6].uvIndex));
+
 	// In this example, the high temperature for the first day of the week
 	// (referenced by the number 0) is written as HTML inside the <div class="today"> element
 	// If I want to round this number up, I would modify the code like this

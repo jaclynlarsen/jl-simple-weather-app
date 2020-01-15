@@ -1,0 +1,38 @@
+body{
+	.home {
+	background-color: rgba(122, 201, 205, .75);
+	color: #64A5A8;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+
+	.name {
+		h1{
+		font-family: 'Amatic SC', cursive;
+		text-align: center;
+		font-size: 5rem;
+		grid-row: 1;
+	}
+		h2 {
+			font-family: 'Amatic SC', cursive;
+			text-align: center;
+			font-size: 2rem;
+			grid-row: 2;
+		}
+	}
+
+	.button {
+		grid-row: 3;
+		text-align: center;
+
+		a {
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: #fff;
+		text-decoration: none;
+		background-color: #64A5A8;
+		padding: 2rem;
+		border-radius: 5px;
+	}
+	}
+}
+}

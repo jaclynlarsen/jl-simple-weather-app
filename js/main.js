@@ -73,33 +73,56 @@ function displayData(forecast){
 	// For example, if I have an element <div class="today"> in my main content area
 	// I can add data from the "Daily" array like this
 
+	$('.slidingpanel').click(function(){
+  $(this).toggleClass('slide');
+})
+
+	//$('.day01 h1').html(d.getDay[0].displayDay);*/
+	
+	//$('.day01 h6').html(Math.round(forecast.currently.temperature));
+	//$('.day01 ').html(displayIcon(forecast.daily.data[0].icon));
+	//$('.day01 p').html(forecast.daily.data[0].summary);
 	$('.day01 h2').html(Math.round(forecast.daily.data[0].temperatureHigh));
 	$('.day01 h3').html(Math.round(forecast.daily.data[0].temperatureLow));
 	$('.day01 h4').html(Math.round(forecast.daily.data[0].uvIndex));
+	$('.day01 h5').html(Math.round(forecast.daily.data[0].windSpeed));
 
+	
 	$('.day02 h2').html(Math.round(forecast.daily.data[1].temperatureHigh));
 	$('.day02 h3').html(Math.round(forecast.daily.data[1].temperatureLow));
 	$('.day02 h4').html(Math.round(forecast.daily.data[1].uvIndex));
+	$('.day02 h5').html(Math.round(forecast.daily.data[1].windSpeed));
+
 	
 	$('.day03 h2').html(Math.round(forecast.daily.data[2].temperatureHigh));
 	$('.day03 h3').html(Math.round(forecast.daily.data[2].temperatureLow));
 	$('.day03 h4').html(Math.round(forecast.daily.data[2].uvIndex));
+	$('.day03 h5').html(Math.round(forecast.daily.data[2].windSpeed));
 
+	
 	$('.day04 h2').html(Math.round(forecast.daily.data[3].temperatureHigh));
 	$('.day04 h3').html(Math.round(forecast.daily.data[3].temperatureLow));
 	$('.day04 h4').html(Math.round(forecast.daily.data[3].uvIndex));
+	$('.day04 h5').html(Math.round(forecast.daily.data[3].windSpeed));
 
+	
 	$('.day05 h2').html(Math.round(forecast.daily.data[4].temperatureHigh));
 	$('.day05 h3').html(Math.round(forecast.daily.data[4].temperatureLow));
 	$('.day05 h4').html(Math.round(forecast.daily.data[4].uvIndex));
+	$('.day05 h5').html(Math.round(forecast.daily.data[4].windSpeed));
 
+	
 	$('.day06 h2').html(Math.round(forecast.daily.data[5].temperatureHigh));
 	$('.day06 h3').html(Math.round(forecast.daily.data[5].temperatureLow));
 	$('.day06 h4').html(Math.round(forecast.daily.data[5].uvIndex));
+	$('.day06 h5').html(Math.round(forecast.daily.data[5].windSpeed));
 
+	
 	$('.day07 h2').html(Math.round(forecast.daily.data[6].temperatureHigh));
 	$('.day07 h3').html(Math.round(forecast.daily.data[6].temperatureLow));
 	$('.day07 h4').html(Math.round(forecast.daily.data[6].uvIndex));
+	$('.day07 h5').html(Math.round(forecast.daily.data[6].windSpeed));
+
 
 	// In this example, the high temperature for the first day of the week
 	// (referenced by the number 0) is written as HTML inside the <div class="today"> element
@@ -156,13 +179,13 @@ function displayDay(n){
 	var d = new Date();
 	var weekday = new Array();
 
-	weekday[0] = "S";
-	weekday[1] = "M";
-	weekday[2] = "T";
-	weekday[3] = "W";
-	weekday[4] = "T";
-	weekday[5] = "F";
-	weekday[6] = "S";
+	weekday[0] = "SUNDAY";
+	weekday[1] = "MONDAY";
+	weekday[2] = "TUESDAY";
+	weekday[3] = "WEDNESDAY";
+	weekday[4] = "THURSDAY";
+	weekday[5] = "FRIDAY";
+	weekday[6] = "SATURDAY";
 
 	var dispDay = d.getDay() + n;
 
